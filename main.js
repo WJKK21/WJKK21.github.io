@@ -4,7 +4,7 @@ const root = document.getElementById("root");
 
 root.style.width = "100vw";
 root.style.height = "100vh";
-root.style.backgroundColor = "darkgray";
+root.style.backgroundColor = "slategray";
 root.style.display = "flex";
 root.style.flexDirection = "column";
 root.style.alignItems = "center";
@@ -25,7 +25,7 @@ const tagMaker = function (tagName, innerText, attributes) {
   return root.appendChild(tag);
 };
 
-tagMaker("div", "안녕하세요", { id: "haeder" });
+tagMaker("h2", "안녕하세요", { id: "haeder" });
 tagMaker("div", "임지성입니다");
 tagMaker("div", "");
 tagMaker("img", "123", {
@@ -33,7 +33,3 @@ tagMaker("img", "123", {
   alt: "스크립트 꺼졌는데요?",
 });
 tagMaker("div", "verstand821@gmail.com ");
-
-const MyName = document.querySelector(".MyName");
-MyName.style.display = "flex";
-MyName.style.justifyContent = "center";
