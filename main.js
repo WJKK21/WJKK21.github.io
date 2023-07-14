@@ -1,13 +1,6 @@
-document.querySelector("body").style.margin = "0";
+import { css } from "./css";
 
-const root = document.getElementById("root");
-
-root.style.width = "100vw";
-root.style.height = "100vh";
-root.style.backgroundColor = "slategray";
-root.style.display = "flex";
-root.style.flexDirection = "column";
-root.style.alignItems = "center";
+css();
 
 const tagMaker = function (tagName, innerText, attributes) {
   let tag = document.createElement(tagName);
@@ -29,7 +22,8 @@ tagMaker("h2", "안녕하세요", { id: "haeder" });
 tagMaker("div", "임지성입니다");
 tagMaker("div", "");
 tagMaker("img", "123", {
-  src: "https://images.velog.io/images/goblin820/post/68db173f-a375-4209-b4e6-f08191f7916c/VelogThumbnail_1.png",
+  src: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
   alt: "스크립트 꺼졌는데요?",
 });
 tagMaker("div", "verstand821@gmail.com ");
+tagMaker("a", "깃허브", { link: "https://github.com/WJKK21" });
