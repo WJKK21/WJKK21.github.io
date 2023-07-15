@@ -1,7 +1,3 @@
-import { css } from "./css";
-
-css();
-
 const tagMaker = function (tagName, innerText, attributes) {
   let tag = document.createElement(tagName);
 
